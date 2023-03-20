@@ -13,26 +13,25 @@
         <div class="box1"><a href="index.html">Resume</a> </div>
         <div class="position">
             
-            <div class="box3"><a href="working.html">Working projects</a> </div>
+            <div class="box3"><a href="working.html">Projects in progress</a> </div>
             <div class="box2"><a href="future.html">Future projects</a> </div>
 
         </div>
     </nav>
     <div class="container">
-        <div class="info">
+        <!-- <div class="info">
             <div class="info-text">
                 <h1>Here's my working projects</h1>
             </div>
-        </div>
-        <ol>
-            
+        </div> -->
+
             <div class="card bg-yellow">
-                <li>
-                    <h3 class="card_title"><a href="https://github.com/BorisTheJacket/parser">Html parser</a></h3>
-                    <h4>This parser I'm using on my current position. I've decide to work smarter not harder, that's why this parser exist</h4>
-                    <h3>How it's works</h3>
+                <!-- <li> -->
+                    <h3 class="card_title"><a href="https://github.com/BorisTheJacket/parser" target="_blank">Html parser</a></h3>
+                    <h4>This parser I'm using on my current position. I decided to work smarter not harder, that's why this parser exists.</h4>
+                    <h4 class="list_title">How the parser works:</h4>
                     <ul>
-                        <li>Parse from website html code</li>
+                        <li>It gathers html code from website;</li>
                     
                             <!-- <pre>
                                 <code>
@@ -90,7 +89,7 @@ if __name__ == '__main__':
                             </pre> -->
                     
                     
-                        <li>Parse data from html code</li>
+                        <li>Collects necessary data from html code;</li>
                     
                     <!-- <pre>
                         <code>
@@ -197,45 +196,42 @@ df.to_excel(f"{' '.join(list_of_dict[0]['Название'].split()[:3])} в н�
                         </code>
                     </pre> -->
                     
-                        <li>In the end we've got an excel-table with necessery data</li>
-                        <img src="excel_table_data_parser.png" alt="Here's have to excel-table"></img>
+                        <li>Presents Excel sheet with necessary data.</li>
+                        <img src="excel_table_data_parser.png" alt="Here's have to excel-table" class="img_working"></img>
                     </ul>  
             </div>
             
             
-            <div class="card bg-red">
-                <li>
-                    <h3 class="card_title"><a href="https://github.com/BorisTheJacket/parser_amo_crm">AMO CRM parser for reports</a></h3>
-                    <h4>This parser I was developed for my friend, which won't doing annoying job</h4>
-                    <h3>How it's works</h3>
+            <div class="card bg-red-working">
+                
+                    <h3 class="card_title"><a href="https://github.com/BorisTheJacket/parser_amo_crm" target="_blank">AMO CRM parser for reports</a></h3>
+                    <h4>I developed parser for my friend, who didn't want to do annoying job. In the link on GitHub you can find good writed technical documentation.</h4>
+                    <h4 class="list_title">How the parser works:</h4>
                     <ul>
-                        <li>By API-key we've entred the account of my friend</li>
-                        <li>After, we took an e-mail from TG-bot</li>
+                        <li>By API-key it logs in the AMO CRM account;</li>
+                        <li>It takes an e-mail from message via TG-bot;</li>
                         <img src="amo_crm_parser_1.png" alt="Image of TG-bot">
-                        <li style="margin-top: 10px;">Finding link between e-mail and lead</li>
-                        <li>Taking all necessery information</li>
-                        <li>Send the report in TG-bot</li>
+                        <li style="margin-top: 10px;"> Findes lead profile with e-mail;</li>
+                        <li>Takes all information from lead profile;</li>
+                        <li>Send the report by TG-bot;</li>
                         <img src="amo_crm_parser_2.png" alt="Image of TG-bot">
-                        <li style="margin-top: 10px;">Example of report</li>
+                        <li style="margin-top: 10px;">Example of report:</li>
                         <img src="amo_crm_parser_3.png" alt="Image of TG-bot">
-                    </ul>   
-
-
-                </li>    
+                    </ul>    
             </div>
             
             
             <div class="card bg-green-working">
                 <li class="card_li">
-                    <h3 class="card_title">In this block will be examples of my current html layout</h3>
+                    <h3 class="card_title">Examples of my current html layout</h3>
                     <ul>
-                        <li><a href="https://dn.ru/radiator/aliuminievyi/nrz/optima_500_100"><img src="dn_1.png" alt="DN image 1"></a> </li>
-                        <li><a href="https://dn.ru/kompensator/rezinovyi/flantcevyi/dn/nbr-pn10"><img src="dn_2.png" alt="DN image 2"></a> </li>
+                        <li><a href="https://dn.ru/radiator/aliuminievyi/nrz/optima_500_100"><img src="{{url_for('static', filename='dn_1.png')}}" alt="DN image 1"></a> </li>
+                        <li><a href="https://dn.ru/kompensator/rezinovyi/flantcevyi/dn/nbr-pn10"><img src="{{url_for('static', filename='dn_2.png')}}" alt="DN image 2"></a> </li>
                     </ul>
 
                 </li>
             </div> 
-        </ol>
+
     </div>
     
 
